@@ -14,8 +14,9 @@ jQuery(document).ready(function() {
 			jQuery('.main-nav ul li a').removeClass('active'); //remove active
 			jQuery('section.content.show').addClass('show').animate({'opacity' : 0}, {queue: false, duration: 1000,
 				complete: function() {
-					jQuery('a[href="#'+link+'"]').addClass('active'); // add active
+					jQuery('a[href="#'+link+'"]').show().addClass('active'); // add active
 					jQuery('section#' + link).addClass('show').animate({'opacity' : 1}, {queue: false, duration: 1000});	
+					jQuery('section#' + link).hide();	
 				}
 			});
 		}
