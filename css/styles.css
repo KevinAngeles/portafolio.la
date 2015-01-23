@@ -52,8 +52,19 @@ a:hover {text-decoration:underline;}
 	position:absolute;
 	top:200px;
 	width:600px;
-	z-index:9999;
 	-webkit-font-smoothing:antialiased;
+}
+
+.z-index-min { 
+	z-index:7000;
+}
+
+.z-index-medium { 
+	z-index:8000;
+}
+
+.z-index-max { 
+	z-index:9999;
 }
 
 #logo {
